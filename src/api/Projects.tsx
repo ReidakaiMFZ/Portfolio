@@ -30,7 +30,7 @@ export default function ProjectList():ReactElement {
         <div className="flex flex-row flex-wrap bg-gray-700">
             {projects.map((project:ProjectProps) => {
                 console.log(project.name);
-                if (project.name === 'reidakaiMFZ.github.io' || project.name == 'ReidakaiMFZ' || project.language === 'C#') return;
+                if (project.name == 'ReidakaiMFZ' ) return;
                 return <Project name={project.name} description={project.description} language={project.language} />
             })}
         </div>
