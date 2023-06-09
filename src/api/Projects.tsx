@@ -5,7 +5,7 @@ interface ProjectProps {
     name: string;
     description: string;
     language: string;
-
+    id?: number;
 }
 function Project(props:ProjectProps):ReactElement {
     return (
@@ -27,11 +27,10 @@ export default function ProjectList():ReactElement {
     }, []);
 
     return (
-        <div className="flex flex-row flex-wrap bg-gray-700">
+        <div className="flex flex-row flex-wrap bg-gray-700" id="Projects">
             {projects.map((project:ProjectProps) => {
-                console.log(project.name);
                 if (project.name == 'ReidakaiMFZ' ) return;
-                return <Project name={project.name} description={project.description} language={project.language} />
+                return <Project name={project.name} description={project.description} language={project.language} key={project.id} />
             })}
         </div>
     );
