@@ -1,6 +1,6 @@
 export default function AboutMe(){
     return(
-        <div className="flex flex-row h-screen bg-slate-900 items-center justify-evenly">
+        <div className="flex flex-row h-screen bg-slate-900 items-center justify-evenly" id="About">
             <div className="w-80">
                 <img src="./src/assets/myphoto.jpg" alt="my photo" className="object-fit"/>
                 
