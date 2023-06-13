@@ -1,18 +1,19 @@
-import React from "react";
 import Header from "./components/Header";
 import InitialPage from "./components/InitialPage";
-import About from "./components/About";
 import ProjectList from "./api/Projects";
+import Experience from "./components/Experience";
+import AboutMe from "./components/AboutMe";
 
 
 export default function App() {
     return (
-        <div className="flex flex-col bg-gray-700">
+        <div className="flex flex-col">
             <Header/>
-            <div>
+            <div className="">
                 <InitialPage/>
-                <About/>
-                <ProjectList/>
+                <AboutMe/>
+                <Experience/>
+                {/* <ProjectList/> */}
             </div>
         </div>
     );
