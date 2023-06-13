@@ -27,7 +27,7 @@ export default function ProjectList():ReactElement {
     }, []);
 
     return (
-        <div className="flex flex-row flex-wrap bg-gray-700" id="Projects">
+        <div className="flex flex-row flex-wrap bg-white" id="Projects">
             {projects.map((project:ProjectProps) => {
                 if (project.name == 'ReidakaiMFZ' ) return;
                 return <Project name={project.name} description={project.description} language={project.language} key={project.id} />

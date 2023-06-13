@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import Header from "./components/Header";
 import InitialPage from "./components/InitialPage";
 import ProjectList from "./api/Projects";
+import Experience from "./components/Experience";
 
 
 export default function App() {
@@ -10,7 +10,8 @@ export default function App() {
             <Header/>
             <div className="">
                 <InitialPage/>
-                <ProjectList/>
+                <Experience/>
+                {/* <ProjectList/> */}
             </div>
         </div>
     );
