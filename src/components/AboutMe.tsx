@@ -1,8 +1,9 @@
+import myphoto from '../assets/myphoto.jpg';
 export default function AboutMe(){
     return(
         <div className="flex flex-row h-screen bg-slate-900 items-center justify-evenly" id="About">
             <div className="w-80">
-                <img src="./src/assets/myphoto.jpg" alt="my photo" className="object-fit"/>
+                <img src={myphoto} alt="my photo" className="object-fit"/>
                 
             </div>
             <div className="flex flex-col w-2/5 gap-y-5 text-white">
