@@ -1,4 +1,5 @@
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import curriculum from "../assets/Curriculum.pdf";
 export default function InitialPage() {
     return(
@@ -8,7 +9,10 @@ export default function InitialPage() {
 
             <div className="flex flex-row mt-3 gap-x-2">
                 <a href="https://github.com/reidakaimfz" className=""><FaGithub className="h-16 w-16"/></a>
-                <a href="https://www.linkedin.com/in/richard-sanches-325237227</"><FaLinkedin className="h-16 w-16"/></a>
+                <a href="https://www.linkedin.com/in/richard-sanches-325237227"><FaLinkedin className="h-16 w-16"/></a>
+                <a href="mailto:richardbsanches@outlook.com">
+                    <MdEmail className="w-16 h-16"/>
+                </a>
                 <a className="flex h-16 w-48 items-center justify-center bg-green-500 rounded-full ml-2" download={true} href={curriculum}>
                     <FaFileDownload className="h-16"/>
                     <p className="ml-2 text-md">Curriculum</p>
