@@ -12,18 +12,18 @@ export default function Experience() {
                     <div className="flex flex-col">
                         <p className="text-md font-bold text-black">Bachelor in Computer Science</p>
                         <span className="flex flex-row">
-                            <p className="text-md text-black italic">Presbiterian University Mackenzie</p>
-                            <p className="text-black mx-1 "> • </p>
-                            <p className="text-black font-light">2023 - ?</p>
+                            <p className="text-md text-black italic max-sm:text-sm">Presbiterian University Mackenzie</p>
+                            <p className="text-black mx-1 max-sm:text-sm"> • </p>
+                            <p className="text-black font-light max-sm:text-sm">2023 - ?</p>
                         </span>
                     </div>
 
                     <div className="flex flex-col">
                         <p className="text-md font-bold text-black">Technician at Systems Analyst and Development</p>
                         <span className="flex flex-row">
-                            <p className="text-md text-black italic">ETEC Jaraguá</p>
-                            <p className="text-black mx-1 "> • </p>
-                            <p className="text-black font-light">2020 - 2023</p>
+                            <p className="text-md text-black italic max-sm:text-sm">ETEC Jaraguá</p>
+                            <p className="text-black mx-1 max-sm:text-sm"> • </p>
+                            <p className="text-black font-light max-sm:text-sm">2020 - 2023</p>
                         </span>
                     </div>
                 </div>

@@ -32,7 +32,7 @@ export default function ProjectList():ReactElement {
     return (
         <div className="flex flex-col bg-slate-900 justify-center items-center min-h-screen max-h-fit max-sm:py-5" id="Projects">
             <h1 className="text-4xl font-bold text-white m-3 border-b-2 border-[#FF4500]">Projects</h1>
-            <p className="text-white"> Here are some of my projects that i've been working on</p>
+            <p className="text-white max-sm:text-sm"> Here are some of my projects that i've been working on</p>
             <div className="flex flex-row  flex-wrap justify-center mt-5">
                 {projects.map((project:ProjectProps) => {
                     if (project.name == 'ReidakaiMFZ' ) return;

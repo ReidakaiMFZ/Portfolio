@@ -12,7 +12,7 @@ export default function App() {
             <AboutMe/>
             <Experience/>
             <ProjectList/>
-            <span className="bg-slate-800 flex justify-center font-extralight text-white">© 2023, Build with ❤️ by Richard Sanches</span>
+            <span className="bg-slate-800 flex justify-center font-extralight text-white max-sm:text-xs">© 2023, Build with ❤️ by Richard Sanches</span>
         </div>
     );
 }

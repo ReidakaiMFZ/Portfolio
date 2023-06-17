@@ -10,19 +10,19 @@ interface IconsFactoryProps {
 }
 function IconsFactory(props: IconsFactoryProps) {
     const icon = cloneElement(props.icon, {
-        className: "w-10 h-10"
+        className: "w-10 h-10 max-sm:w-8 max-sm:h-8"
     });
     return(
-        <div className="flex flex-col justify-center items-center bg-green-500 w-[5rem] h-[5rem] rounded-lg">
+        <div className="flex flex-col justify-center items-center bg-green-500 w-20 h-20 rounded-lg max-sm:w-16 max-sm:h-16">
             {icon}
-            <p className="text-md font-bold text-black">{props.name}</p>
+            <p className="text-md font-bold text-black max-sm:text-xs">{props.name}</p>
         </div>
     ); 
 }
 
 export default function SetIcons(){
     return (
-        <div className="grid grid-flow-row grid-cols-4 gap-6 ">
+        <div className="grid grid-flow-row grid-cols-4 gap-6 max-sm:gap-y-5">
             {/* <IconContext.Provider value={{color: "yellow"}}> </IconContext.Provider> */}
                 <IconsFactory name="Javascript" icon={<DiJavascript1/>}/>
                 <IconsFactory name="HTML" icon={<FaHtml5/>}/>
