@@ -10,7 +10,7 @@ interface ProjectProps {
 }
 function Project(props:ProjectProps):ReactElement {
     return (
-        <div className="flex flex-col min-w-80 w-96 min-h-40 py-3 px-5 m-1 content-between rounded-md bg-gray-300">
+        <div className="flex flex-col min-w-80 w-96 min-h-40 py-3 px-5 m-1 content-between rounded-md bg-gray-300 max-sm:w-[90%]">
             <h1 className="font-bold text-xl mb-2">{props.name}</h1>
             <div className="flex flex-row gap-x-2">
                 <span className="inline-block text-xs w-fit p-2 rounded-md bg-green-500 text-black">{props.language}</span>
@@ -30,7 +30,7 @@ export default function ProjectList():ReactElement {
     }, []);
 
     return (
-        <div className="flex flex-col bg-slate-900 justify-center items-center h-screen" id="Projects">
+        <div className="flex flex-col bg-slate-900 justify-center items-center min-h-screen max-h-fit max-sm:py-5" id="Projects">
             <h1 className="text-4xl font-bold text-white m-3 border-b-2 border-[#FF4500]">Projects</h1>
             <p className="text-white"> Here are some of my projects that i've been working on</p>
             <div className="flex flex-row  flex-wrap justify-center mt-5">
