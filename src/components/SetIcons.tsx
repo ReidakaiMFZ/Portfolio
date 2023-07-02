@@ -1,7 +1,7 @@
 import {cloneElement} from "react";
 import { DiReact, DiJavascript1, DiGit } from "react-icons/di";
 import { FaPhp, FaUbuntu, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiMysql, SiCsharp, SiDart, SiFlutter } from "react-icons/si";
+import { SiMysql, SiCsharp, SiDart, SiFlutter, SiTailwindcss } from "react-icons/si";
 // import { IconContext } from "react-icons/lib";
 
 interface IconsFactoryProps {
@@ -23,7 +23,6 @@ function IconsFactory(props: IconsFactoryProps) {
 export default function SetIcons(){
     return (
         <div className="grid grid-flow-row grid-cols-4 gap-6 max-sm:gap-y-5">
-            {/* <IconContext.Provider value={{color: "yellow"}}> </IconContext.Provider> */}
                 <IconsFactory name="Javascript" icon={<DiJavascript1/>}/>
                 <IconsFactory name="HTML" icon={<FaHtml5/>}/>
                 <IconsFactory name="CSS" icon={<FaCss3Alt/>}/>
@@ -35,6 +34,7 @@ export default function SetIcons(){
                 <IconsFactory name="MySQL" icon={<SiMysql/>}/>
                 <IconsFactory name="React JS" icon={<DiReact/>}/>
                 <IconsFactory name="Flutter" icon={<SiFlutter/>}/>
+                <IconsFactory name="Tailwind" icon={<SiTailwindcss/>}/>
         </div>
     )
 }
