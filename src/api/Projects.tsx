@@ -24,7 +24,7 @@ function Project(props:ProjectProps):ReactElement {
 export default function ProjectList():ReactElement {
     const [projects, setProjects] = useState([]) ;
     useEffect(() => {
-        axios.get('https://api.github.com/users/reidakaiMFZ/repos').then((res) => {
+        axios.get('https://api.github.com/users/Richardsan1/repos').then((res) => {
             setProjects(res.data);
         })
     }, []);
